@@ -8,7 +8,7 @@
  *
  * Valid drivers are: native, sendmail, smtp
  */
-$config['driver'] = 'native';
+$config['driver'] = 'smtp';
 
 /**
  * To use secure connections with SMTP, set "port" to 465 instead of 25.
@@ -19,7 +19,7 @@ $config['driver'] = 'native';
  * @param   string  sendmail: executable path, with -bs or equivalent attached
  * @param   array   smtp: hostname, (username), (password), (port), (auth), (encryption)
  */
-$config['options'] = NULL;
+$config['options'] = array('hostname'=>'smtp.sendgrid.net', 'port'=>'587', 'username'=>'nycga', 'password'=>'P97oB1V3ff50');
 
 
 $config['max_imap_messages'] = 10;
