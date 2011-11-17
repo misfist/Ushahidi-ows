@@ -32,6 +32,9 @@
 			<div id="menu">
 				<ul>
 					<?php nav::main_tabs($this_page,array('reports','reports_submit','alerts','contact')); ?>
+					<li><a href="http://itunes.apple.com/us/app/ushahidi-ios/id410609585?mt=8">iOS App</a></li>
+					<li><a href="https://market.android.com/details?id=com.ushahidi.android.app">Android App</a></li>
+					
 				</ul>
 			</div>
 	</div>
