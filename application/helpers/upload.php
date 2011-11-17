@@ -24,7 +24,7 @@ class upload_Core {
 	public static function save($file, $filename = NULL, $directory = NULL, $chmod = 0644)
 	{
 		// Load file data from FILES if not passed as array
-		$file = is_array($file) ? $file : $_FILES[$file];
+		$file = is_array($file) ? $file : (isset($_FILES[$file]))? $_FILES[$file]:NULL;
 
 		if ($filename === NULL)
 		{

@@ -459,6 +459,7 @@ class reports_Core {
 		// c. Photos
 		$filenames = upload::save('incident_photo');
 		$i = 1;
+		if (is_array($filenames)) {
 		foreach ($filenames as $filename)
 		{
 			$new_filename = $incident->id . "_" . $i . "_" . time();
@@ -493,7 +494,7 @@ class reports_Core {
 			$photo->media_date = date("Y-m-d H:i:s",time());
 			$photo->save();
 			$i++;
-		}
+		}}
 	}
 	
 	/**
