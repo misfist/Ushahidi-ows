@@ -6,6 +6,10 @@
 */
 
 var providers_large = {
+  nycga : {
+    name: 'NYCGA',
+    url: 'https://nycga.net/'
+  },
 	google : {
 		name : 'Google',
 		url : 'https://www.google.com/accounts/o8/id'
