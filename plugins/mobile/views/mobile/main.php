@@ -67,7 +67,21 @@
 	}
 	?>				
 </div>
+<h2 class="block_title">Mobile Apps</h2>
+<div class="block">
+    <h2 class="expand">Mobile Apps</h2>
+    <div class="collapse">
+        
+
+        	<li><a href="http://itunes.apple.com/us/app/ushahidi-ios/id410609585?mt=8">iOS App</a></li>
+			<li><a href="https://market.android.com/details?id=com.ushahidi.android.app">Android App</a></li>
+    </div>
+    
+</div>
+
+
 <h2 class="block_title">More</h2>
+
 <div class="block">
 	<h2 class="other"><a href="#">Contact Us</a></h2>
 	<h2 class="other"><a href="#">About Us</a></h2>
