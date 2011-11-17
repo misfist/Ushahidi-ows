@@ -50,7 +50,7 @@ class Distance_Core
 
 			$dist = 
 				$EARTH_RADIUS_MILES
-				* (-1 * atan($dist / sqrt(1 - $dist * $dist)) + M_PI / 2);
+				* (-1 * atan($dist / sqrt(1 - ($dist * $dist))) + M_PI / 2);
 		}
 		
 		if ($in_kms)
