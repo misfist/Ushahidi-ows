@@ -575,7 +575,6 @@ class reports_Core {
 		
 		// Fetch the URL data into a local variable
 		$url_data = array_merge($_GET);
-		
 		// Check if some parameter values are separated by "," except the location bounds
 		$exclude_params = array('c' => '', 'v' => '', 'm' => '', 'mode' => '', 'sw'=> '', 'ne'=> '');
 		foreach ($url_data as $key => $value)
@@ -708,8 +707,8 @@ class reports_Core {
 		// 
 		if (isset($url_data['from']) AND isset($url_data['to']))
 		{
-			$date_from = date('Y-m-d', strtotime($url_data['from']));
-			$date_to = date('Y-m-d', strtotime($url_data['to']));
+			$date_from = date('Y-m-d H:i:s', strtotime($url_data['from']));
+			$date_to = date('Y-m-d H:i:s', strtotime($url_data['to']));
 			
 			array_push(self::$params, 
 				'i.incident_date >= "'.$date_from.'"',
