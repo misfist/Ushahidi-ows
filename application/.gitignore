@@ -1,2 +1,4 @@
 cache/*
 logs/*
+
+application/config/database.php
