@@ -67,13 +67,6 @@
 				<div id="mainmenu" class="clearingfix">
 					<ul>
 						<?php nav::main_tabs($this_page); ?>
-					    	<li><a class="tooltip" href="http://itunes.apple.com/us/app/ushahidi-ios/id410609585?mt=8" title="The Map URL is http://maps.occupy.net - the site is OccupyMap">iOS App</a>
-					    	    <div class="hovertip" style="display: none; left: 423px; top: 406px;">The Map URL is "http://maps.occupy.net" - the site is OccupyMap</div>    
-					    	</li>
-        					<li><a title ="The Deployment URL is http://maps.occupy.net - the site is OccupyMap" class="tooltip" href="https://market.android.com/details?id=com.ushahidi.android.app">Android App</a>
-        					    <div class="hovertip" style="display: none; left: 423px; top: 406px;">The Deployment URL is "http://maps.occupy.net" - the site is OccupyMap</div>    
-                                
-        					    </li>
 					</ul>
 
 				</div>
