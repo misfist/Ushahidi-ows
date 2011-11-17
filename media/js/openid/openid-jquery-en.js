@@ -6,10 +6,7 @@
 */
 
 var providers_large = {
-  nycga : {
-    name: 'NYCGA',
-    url: 'https://nycga.net/'
-  },
+ 
 	google : {
 		name : 'Google',
 		url : 'https://www.google.com/accounts/o8/id'
@@ -18,10 +15,10 @@ var providers_large = {
       name: 'Facebook',
       url: "javascript:facebook_click();"
     },
-	yahoo : {
-		name : 'Yahoo',
-		url : 'http://me.yahoo.com/'
-	},
+    nycga : {
+       name: 'NYCGA',
+       url: 'https://nycga.net/'
+     },
 	/*aol : {
 		name : 'AOL',
 		label : 'Enter your AOL screenname.',
