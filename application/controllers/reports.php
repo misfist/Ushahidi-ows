@@ -150,7 +150,6 @@ class Reports_Controller extends Main_Controller {
 
 		// Reports
 		$incidents = Incident_Model::get_incidents(reports::$params, $pagination);
-		
 		// Swap out category titles with their proper localizations using an array (cleaner way to do this?)
 		$localized_categories = array();
 		foreach ($incidents as $incident)
