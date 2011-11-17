@@ -1,0 +1,72 @@
+.cloudvox-sound{
+	margin-top:10px;
+	padding:10px;
+	display:none;
+	background-color:#eee;
+	border:1px dotted #ccc;
+}
+.cloudvox-btn-upload{
+	float:left;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	line-height:30px;
+	width:100px;
+	margin-right:15px;
+	background-color: #b5c9e2;
+	border-top: 2px #cce3ff solid;
+	border-left: 2px #cce3ff solid;
+	border-bottom: 2px #31557f solid;
+	border-right: 2px #31557f solid;
+}
+.cloudvox-btn-upload:hover {
+background-color: #99aabf;
+border-top: 2px #31557f solid;
+border-left: 2px #31557f solid;
+border-bottom: 2px #cce3ff solid;
+border-right: 2px #cce3ff solid;
+}
+.cloudvox-loading{
+	height:30px;
+	float:left;
+	line-height:30px;
+	font-size:13px;
+	font-weight:bold;
+}
+.cloudvox-prompt-file{
+	color:#187200;
+	font-weight:bold;
+}
+.cloudvox_play_admin{
+	display:none;
+	margin-top:10px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dotted #ccc;
+}
+.cloudvox_play_admin .sound_title{
+	display:block;
+	clear:both;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+}
+.cloudvox_play_report,
+.cloudvox_play_admin_report{
+	margin-top:10px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dotted #ccc;
+}
+.cloudvox_play_report .sound_title,
+.cloudvox_play_admin_report .sound_title{
+	display:block;
+	clear:both;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+}
