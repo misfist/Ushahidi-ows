@@ -78,7 +78,7 @@ class Messages_Controller extends Admin_Controller
         {
             $filter .= ' AND message.reporter_id=\''.$_GET['rid'].'\'';
         }
-        
+       	$filter .= " And message.message NOT LIKE 'RT%' "; 
         // ALL / Trusted / Spam
         $level = '0';
         if (isset($_GET['level']) AND !empty($_GET['level']))
