@@ -115,7 +115,7 @@
 	'page' => 'page',
 	'pages' => 'pages',
 	'page_not_found' => 'Page non trouvée',
-	'page_not_found_message' => 'Désolé, cette page n\'existe pas.<p><strong>Venez-vous d\'une autre page de ce site?</strong><br />Si vous êtez arrivé ici à partir d\'une autre page de notre site, <a href="#">contactez nous</a> pour que nous corrigions notre erreur.</p><p><strong>Êtes-vous arrivé sur cette page en venant d\'un autre site? </strong><br />Les liens d\'autres sites peuvent parfois n\'être plus à jour, ou en erreur. <a href="#">Dites nous</a> d\'où vous venez et nous pourrons essayer de contacter le site pour résoudre le problème.</p><p><strong>Avez vous entré l\'URL à la main? </strong><br />Peut-être avez vous fait une erreur en tapant l\'adresse. Vérifiez et corrigez si nécessaire.</p>',
+	'page_not_found_message' => 'Désolé, cette page n\'existe pas.<p><strong>Venez-vous d\'une autre page de ce site?</strong><br />Si vous êtez arrivé ici à partir d\'une autre page de notre site, <a href="javascript:void(0)">contactez nous</a> pour que nous corrigions notre erreur.</p><p><strong>Êtes-vous arrivé sur cette page en venant d\'un autre site? </strong><br />Les liens d\'autres sites peuvent parfois n\'être plus à jour, ou en erreur. <a href="javascript:void(0)">Dites nous</a> d\'où vous venez et nous pourrons essayer de contacter le site pour résoudre le problème.</p><p><strong>Avez vous entré l\'URL à la main? </strong><br />Peut-être avez vous fait une erreur en tapant l\'adresse. Vérifiez et corrigez si nécessaire.</p>',
 	'parameters_used' => 'Parametres utilisées',
 	'password' => 'Mot de passe',
 	'password_reset' => 'Mot de passe réinitialisé',

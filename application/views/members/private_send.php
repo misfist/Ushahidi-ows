@@ -53,15 +53,15 @@
 					<!-- column -->		
 					<div class="sms_holder">
 						<div class="row">
-							<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_to"); ?>"><?php echo Kohana::lang('ui_admin.private_to');?></a></h4>
+							<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_to"); ?>"><?php echo Kohana::lang('ui_admin.private_to');?></a></h4>
 							<?php print form::input('private_to', $form['private_to'], ' class="text long2" '); ?>
 						</div>
 						<div class="row">
-							<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_subject"); ?>"><?php echo Kohana::lang('ui_admin.private_subject');?></a></h4>
+							<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_subject"); ?>"><?php echo Kohana::lang('ui_admin.private_subject');?></a></h4>
 							<?php print form::input('private_subject', $form['private_subject'], ' class="text long2" '); ?>
 						</div>
 						<div class="row">
-							<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_message"); ?>"><?php echo Kohana::lang('ui_admin.private_message');?></a></h4>
+							<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.private_message"); ?>"><?php echo Kohana::lang('ui_admin.private_message');?></a></h4>
 							<?php print form::textarea('private_message', $form['private_message'], ' rows="6" cols="40" class="textarea long" '); ?>
 						</div>
 					</div>

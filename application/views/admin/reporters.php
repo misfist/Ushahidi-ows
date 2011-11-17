@@ -18,9 +18,9 @@
 					<!-- tab -->
 					<div class="tab">
 						<ul>
-							<li><a href="#" onClick="reportersAction('d', 'DELETE', '', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
+							<li><a href="javascript:void(0)" onClick="reportersAction('d', 'DELETE', '', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
 							<?php foreach($levels as $level) { ?>
-								<li><a href="#" onClick="reportersAction('l', 'Mark As <?php echo $level->level_title?>', '', <?php echo $level->id?>)" class="reporters_tab_<?php echo $level->id;?>"><?php echo $level->level_title?></a></li>
+								<li><a href="javascript:void(0)" onClick="reportersAction('l', 'Mark As <?php echo $level->level_title?>', '', <?php echo $level->id?>)" class="reporters_tab_<?php echo $level->id;?>"><?php echo $level->level_title?></a></li>
 							<?php } ?>
 						</ul>
 					</div>
@@ -40,7 +40,7 @@
 							<?php print form::dropdown('s', $search_type_array, $search_type); ?>
 						</div>				
 						<div class="tab_form_item">
-							<a href="#" onclick="submitSearch()"><strong><?php echo Kohana::lang('ui_admin.search');?></strong></a>
+							<a href="javascript:void(0)" onclick="submitSearch()"><strong><?php echo Kohana::lang('ui_admin.search');?></strong></a>
 						</div>
 						<?php print form::close(); ?>			
 					</div>

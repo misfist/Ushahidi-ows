@@ -44,7 +44,7 @@
 							<h3><?php echo Kohana::lang('ui_main.recent_reports');?></h3>
 							<ul>
 								<li class="none-separator"><a href="<?php echo url::site() . 'members/reports' ?>"><?php echo Kohana::lang('ui_main.view_all');?></a></li>
-								<li><a href="#" class="rss-icon"><?php echo Kohana::lang('ui_main.rss');?></a></li>
+								<li><a href="javascript:void(0)" class="rss-icon"><?php echo Kohana::lang('ui_main.rss');?></a></li>
 							</ul>
 						</div>
 						<?php
@@ -105,9 +105,9 @@
 							?>
 							<div class="post">
 								<ul class="post-info">
-									<li><a href="#" class="<?php echo $incident_approved; ?>"><?php echo strtoupper(Kohana::lang('ui_main.active'));?>:</a></li>
-									<li><a href="#" class="<?php echo $incident_verified ?>"><?php echo strtoupper(Kohana::lang('ui_main.verified'));?>:</a></li>
-									<li class="last"><a href="#" class="<?php echo $submit_mode; ?>"><?php echo strtoupper(Kohana::lang('ui_main.source'));?>:</a></li>
+									<li><a href="javascript:void(0)" class="<?php echo $incident_approved; ?>"><?php echo strtoupper(Kohana::lang('ui_main.active'));?>:</a></li>
+									<li><a href="javascript:void(0)" class="<?php echo $incident_verified ?>"><?php echo strtoupper(Kohana::lang('ui_main.verified'));?>:</a></li>
+									<li class="last"><a href="javascript:void(0)" class="<?php echo $submit_mode; ?>"><?php echo strtoupper(Kohana::lang('ui_main.source'));?>:</a></li>
 								</ul>
 								<h4><strong><?php echo $incident_date; ?></strong><a href="<?php echo url::site() . 'members/reports/edit/' . $incident_id; ?>"><?php echo $incident_title; ?></a></h4>
 								<p><?php echo $incident_description; ?></p>
@@ -193,11 +193,11 @@
 								<strong><?php echo $alerts; ?></strong>
 							</li>
 							<li>
-								<a href="#" class="votes"><?php echo Kohana::lang('ui_admin.my_votes');?></a>
+								<a href="javascript:void(0)" class="votes"><?php echo Kohana::lang('ui_admin.my_votes');?></a>
 								<strong><?php echo $votes; ?></strong>
 								<ul>
-									<li><a href="#"><?php echo Kohana::lang('ui_admin.my_votes_up');?></a><strong>(<?php echo $votes_up; ?>)</strong></li>
-									<li><a href="#"><?php echo Kohana::lang('ui_admin.my_votes_down');?></a><strong>(<?php echo $votes_down; ?>)</strong></li>
+									<li><a href="javascript:void(0)"><?php echo Kohana::lang('ui_admin.my_votes_up');?></a><strong>(<?php echo $votes_up; ?>)</strong></li>
+									<li><a href="javascript:void(0)"><?php echo Kohana::lang('ui_admin.my_votes_down');?></a><strong>(<?php echo $votes_down; ?>)</strong></li>
 								</ul>
 							</li>
 							<li>

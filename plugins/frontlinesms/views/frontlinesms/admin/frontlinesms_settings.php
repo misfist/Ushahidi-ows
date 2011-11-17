@@ -4,7 +4,7 @@
 			<span class="big_blue_span"><?php echo Kohana::lang('ui_main.step');?> 1:</span>
 		</td>
 		<td>
-			<h4 class="fix"><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_flsms_download"); ?>"><?php echo Kohana::lang('settings.sms.flsms_download');?></a></h4>
+			<h4 class="fix"><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_flsms_download"); ?>"><?php echo Kohana::lang('settings.sms.flsms_download');?></a></h4>
 			<p>
 				<?php echo Kohana::lang('settings.sms.flsms_description');?>.
 			</p>
@@ -18,7 +18,7 @@
 			<span class="big_blue_span"><?php echo Kohana::lang('ui_main.step');?> 2:</span>
 		</td>
 		<td>
-			<h4 class="fix"><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_flsms_synchronize"); ?>"><?php echo Kohana::lang('settings.sms.flsms_synchronize');?></a></h4>
+			<h4 class="fix"><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_flsms_synchronize"); ?>"><?php echo Kohana::lang('settings.sms.flsms_synchronize');?></a></h4>
 			<p>
 				<?php echo Kohana::lang('settings.sms.flsms_instructions');?>.
 			</p>

@@ -24,22 +24,22 @@
 	<div class="tabs">
 		<!-- tabset -->
 		<ul class="tabset">
-			<li><a href="#" class="active">
+			<li><a href="javascript:void(0)" class="active">
 				<?php echo Kohana::lang('ui_main.show_all'); ?> </a>
 			</li>
 		</ul>
 		<!-- tab -->
 		<div class="tab">
 			<ul>
-				<li><a href="#" onclick="feedbackAction('r','READ', '');">
+				<li><a href="javascript:void(0)" onclick="feedbackAction('r','READ', '');">
 					<?php echo strtoupper(Kohana::lang('ui_main.read')); ?></a>
 				</li>
 				
-				<li><a href="#" onclick="feedbackAction('u','UNREAD', '');">
+				<li><a href="javascript:void(0)" onclick="feedbackAction('u','UNREAD', '');">
 					<?php echo strtoupper(Kohana::lang('ui_main.unread')); ?></a>
 				</li>
 				
-				<li><a href="#" onclick="feedbackAction('d','DELETE', '');">
+				<li><a href="javascript:void(0)" onclick="feedbackAction('d','DELETE', '');">
 					<?php echo strtoupper(Kohana::lang('ui_main.delete')); ?></a>
 				</li>
 			</ul>
@@ -67,7 +67,7 @@
 			<h3>
 				<?php echo Kohana::lang('ui_main.feedback'); ?>
 				 <?php echo "";//$form_action; ?> 
-				<a href="#" id="hideMessage" class="hide">
+				<a href="javascript:void(0)" id="hideMessage" class="hide">
 					<?php echo Kohana::lang('ui_main.hide_this_message'); ?></a>
 			</h3>
 		</div>
@@ -150,16 +150,16 @@
 									<ul>
 										<li class="none-separator">
 											<?php if($feedback_read == 1 ) { ?>
-											<a href="#" class="status_yes" onclick="feedbackAction('r','READ', '<?php echo $feedback_id; ?>');">
+											<a href="javascript:void(0)" class="status_yes" onclick="feedbackAction('r','READ', '<?php echo $feedback_id; ?>');">
 												<?php echo Kohana::lang('ui_main.mark_read');?> 
 											</a>
 											<?php } else {?>
-											<a href="#" onclick="feedbackAction('u','UNREAD', '<?php echo $feedback_id; ?>');">
+											<a href="javascript:void(0)" onclick="feedbackAction('u','UNREAD', '<?php echo $feedback_id; ?>');">
 												<?php echo Kohana::lang('ui_main.mark_unread');?> 
 											</a>
 											<?php }?>
 											</li>
-										<li><a href="#" class="del" onclick="feedbackAction('d','DELETE', '<?php echo $feedback_id; ?>');"><?php echo Kohana::lang('ui_main.delete');?></a></li>
+										<li><a href="javascript:void(0)" class="del" onclick="feedbackAction('d','DELETE', '<?php echo $feedback_id; ?>');"><?php echo Kohana::lang('ui_main.delete');?></a></li>
 									</ul>
 								</td>
 							</tr>

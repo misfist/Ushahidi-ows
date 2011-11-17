@@ -55,8 +55,8 @@
 							<h3><?php echo $id ? Kohana::lang('ui_main.edit_report') : Kohana::lang('ui_main.new_report'); ?></h3>
 							<div class="btns" style="float:right;">
 								<ul>
-									<li><a href="#" class="btn_save"><?php echo strtoupper(Kohana::lang('ui_main.save_report'));?></a></li>
-									<li><a href="#" class="btn_save_close"><?php echo strtoupper(Kohana::lang('ui_main.save_close'));?></a></li>
+									<li><a href="javascript:void(0)" class="btn_save"><?php echo strtoupper(Kohana::lang('ui_main.save_report'));?></a></li>
+									<li><a href="javascript:void(0)" class="btn_save_close"><?php echo strtoupper(Kohana::lang('ui_main.save_close'));?></a></li>
 									<li><a href="<?php echo url::base().'admin/reports/';?>" class="btns_red"><?php echo strtoupper(Kohana::lang('ui_main.cancel'));?></a>&nbsp;&nbsp;&nbsp;</li>
 									<?php if ($id) {?>
 									<li><a href="<?php echo $previous_url;?>" class="btns_gray">&laquo; <?php echo strtoupper(Kohana::lang('ui_main.previous'));?></a></li>
@@ -73,7 +73,7 @@
 							?>
 							<?php if ($show_messages) { ?>
 							<div class="row">
-								<h4 style="margin:0;padding:0;"><a href="#" id="messages_toggle" class="show-messages"><?php echo Kohana::lang('ui_main.show_messages');?></a>&nbsp;</h4>
+								<h4 style="margin:0;padding:0;"><a href="javascript:void(0)" id="messages_toggle" class="show-messages"><?php echo Kohana::lang('ui_main.show_messages');?></a>&nbsp;</h4>
 								<!--messages table goes here-->
 			                    <div id="show_messages">
 									<?php
@@ -114,7 +114,7 @@
 							{ // Use default date for new report
 								?>
 								<div class="row" id="datetime_default">
-									<h4><a href="#" id="date_toggle" class="new-cat"><?php echo Kohana::lang('ui_main.modify_date');?></a><?php echo Kohana::lang('ui_main.modify_date');?>: 
+									<h4><a href="javascript:void(0)" id="date_toggle" class="new-cat"><?php echo Kohana::lang('ui_main.modify_date');?></a><?php echo Kohana::lang('ui_main.modify_date');?>: 
 									<?php echo Kohana::lang('ui_main.today_at').' '.$form['incident_hour']
 										.":".$form['incident_minute']." ".$form['incident_ampm']; ?></h4>
 								</div>
@@ -154,7 +154,7 @@
 							</div>
 							<?php Event::run('ushahidi_action.report_form_admin_after_time', $id); ?>
 							<div class="row">
-								<h4><a href="#" id="category_toggle" class="new-cat"><?php echo Kohana::lang('ui_main.new_category');?></a><?php echo Kohana::lang('ui_main.categories');?> 
+								<h4><a href="javascript:void(0)" id="category_toggle" class="new-cat"><?php echo Kohana::lang('ui_main.new_category');?></a><?php echo Kohana::lang('ui_main.categories');?> 
 								<span><?php echo Kohana::lang('ui_main.select_multiple');?>.</span></h4>
 								<?php print $new_category_toggle_js; ?>
 								<!--category_add form goes here-->
@@ -175,7 +175,7 @@
                                     print $color_picker_js;
                                     print '<br/>';
                                     print '<span>';
-                                    print '<a href="#" id="add_new_category">'.Kohana::lang('ui_main.add').'</a>';
+                                    print '<a href="javascript:void(0)" id="add_new_category">'.Kohana::lang('ui_main.add').'</a>';
                                     print '</span>';
                                     ?> 
                                 </div>
@@ -205,10 +205,10 @@
 									<?php print form::input('longitude', $form['longitude'], ' class="text"'); ?>
 								</div>
 								<ul class="map-toggles">
-						          <li><a href="#" class="smaller-map">Smaller map</a></li>
-						          <li style="display:block;"><a href="#" class="wider-map">Wider map</a></li>
-						          <li><a href="#" class="taller-map">Taller map</a></li>
-						          <li><a href="#" class="shorter-map">Shorter Map</a></li>
+						          <li><a href="javascript:void(0)" class="smaller-map">Smaller map</a></li>
+						          <li style="display:block;"><a href="javascript:void(0)" class="wider-map">Wider map</a></li>
+						          <li><a href="javascript:void(0)" class="taller-map">Taller map</a></li>
+						          <li><a href="javascript:void(0)" class="shorter-map">Shorter Map</a></li>
 						        </ul>
 								<div id="divMap" class="map_holder_reports">
 									<div id="geometryLabelerHolder" class="olControlNoSelect">
@@ -232,16 +232,16 @@
 								<div id="panel" class="olControlEditingToolbar"></div>
 								<div class="btns" style="float:left;">
 									<ul style="padding:4px;">
-										<li><a href="#" class="btn_del_last"><?php echo strtoupper(Kohana::lang('ui_main.delete_last'));?></a></li>
-										<li><a href="#" class="btn_del_sel"><?php echo strtoupper(Kohana::lang('ui_main.delete_selected'));?></a></li>
-										<li><a href="#" class="btn_clear"><?php echo strtoupper(Kohana::lang('ui_main.clear_map'));?></a></li>
+										<li><a href="javascript:void(0)" class="btn_del_last"><?php echo strtoupper(Kohana::lang('ui_main.delete_last'));?></a></li>
+										<li><a href="javascript:void(0)" class="btn_del_sel"><?php echo strtoupper(Kohana::lang('ui_main.delete_selected'));?></a></li>
+										<li><a href="javascript:void(0)" class="btn_clear"><?php echo strtoupper(Kohana::lang('ui_main.clear_map'));?></a></li>
 									</ul>
 								</div>
 								<div style="clear:both;"></div>
 								<?php print form::input('location_find', '', ' title="'.Kohana::lang('ui_main.location_example').'" class="findtext"'); ?>
 								<div class="btns" style="float:left;">
 									<ul>
-										<li><a href="#" class="btn_find"><?php echo strtoupper(Kohana::lang('ui_main.find_location'));?></a></li>
+										<li><a href="javascript:void(0)" class="btn_find"><?php echo strtoupper(Kohana::lang('ui_main.find_location'));?></a></li>
 									</ul>
 								</div>
 								<div id="find_loading" class="incident-find-loading"></div>
@@ -499,8 +499,8 @@
 						</div>
 						<div class="btns">
 							<ul>
-								<li><a href="#" class="btn_save"><?php echo strtoupper(Kohana::lang('ui_main.save_report'));?></a></li>
-								<li><a href="#" class="btn_save_close"><?php echo strtoupper(Kohana::lang('ui_main.save_close'));?></a></li>
+								<li><a href="javascript:void(0)" class="btn_save"><?php echo strtoupper(Kohana::lang('ui_main.save_report'));?></a></li>
+								<li><a href="javascript:void(0)" class="btn_save_close"><?php echo strtoupper(Kohana::lang('ui_main.save_close'));?></a></li>
 								<?php 
 								if($id)
 								{

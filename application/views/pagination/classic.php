@@ -35,7 +35,7 @@
 		<?php if ($i < 1 OR $i > $total_pages) continue ?>
 
 		<?php if ($current_page == $i): ?>
-			<li><a href="#" class="active"><?php echo $i ?></a></li>
+			<li><a href="javascript:void(0)" class="active"><?php echo $i ?></a></li>
 		<?php else: ?>
 			<li><a href="<?php echo str_replace('{page}', $i, $url) ?>"><?php echo $i ?></a></li>
 		<?php endif ?>

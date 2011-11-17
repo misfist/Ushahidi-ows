@@ -57,7 +57,7 @@
 		
 					<div class="sms_holder">
 						<div class="row">
-							<h4><a href="#" class="tooltip" title="Text Messages Sent From the System Will Use the Selected Provider. ***Provider text messaging rates may apply!">Default Sending Provider</a> <span>Provider text messaging rates may apply</span></h4>
+							<h4><a href="javascript:void(0)" class="tooltip" title="Text Messages Sent From the System Will Use the Selected Provider. ***Provider text messaging rates may apply!">Default Sending Provider</a> <span>Provider text messaging rates may apply</span></h4>
 							<span class="sel-holder">
 								<?php print form::dropdown('sms_provider', $sms_provider_array, $form['sms_provider']); ?>
 							</span>

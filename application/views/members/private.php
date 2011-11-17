@@ -32,8 +32,8 @@
 						{
 							?>
 							<ul>
-								<li><a href="#" onClick="messagesAction('d', 'DELETE', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
-								<li><a href="#" onClick="messagesAction('r', 'MARK READ', '')"><?php echo strtoupper(Kohana::lang('ui_main.mark_read'));?></a></li>
+								<li><a href="javascript:void(0)" onClick="messagesAction('d', 'DELETE', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
+								<li><a href="javascript:void(0)" onClick="messagesAction('r', 'MARK READ', '')"><?php echo strtoupper(Kohana::lang('ui_main.mark_read'));?></a></li>
 							</ul>
 							<?php
 						}
@@ -55,7 +55,7 @@
 				?>
 					<!-- green-box -->
 					<div class="green-box" id="submitStatus">
-						<h3><?php echo Kohana::lang('ui_main.messages');?> <?php echo $form_action; ?> <a href="#" id="hideMessage" class="hide">hide this message</a></h3>
+						<h3><?php echo Kohana::lang('ui_main.messages');?> <?php echo $form_action; ?> <a href="javascript:void(0)" id="hideMessage" class="hide">hide this message</a></h3>
 					</div>
 				<?php
 				}

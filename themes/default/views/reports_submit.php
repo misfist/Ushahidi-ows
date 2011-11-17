@@ -54,7 +54,7 @@
 				</div>
 				<div class="report_row" id="datetime_default">
 					<h4>
-						<a href="#" id="date_toggle" class="show-more"><?php echo Kohana::lang('ui_main.modify_date'); ?></a>
+						<a href="javascript:void(0)" id="date_toggle" class="show-more"><?php echo Kohana::lang('ui_main.modify_date'); ?></a>
 						<?php echo Kohana::lang('ui_main.date_time'); ?>: 
 						<?php echo Kohana::lang('ui_main.today_at')." "."<span id='current_time'>".$form['incident_hour']
 							.":".$form['incident_minute']." ".$form['incident_ampm']."</span>"; ?>
@@ -172,9 +172,9 @@
 					    <div id="panel" class="olControlEditingToolbar"></div>
 						<div class="btns" style="float:left;">
 							<ul style="padding:4px;">
-								<li><a href="#" class="btn_del_last"><?php echo strtoupper(Kohana::lang('ui_main.delete_last'));?></a></li>
-								<li><a href="#" class="btn_del_sel"><?php echo strtoupper(Kohana::lang('ui_main.delete_selected'));?></a></li>
-								<li><a href="#" class="btn_clear"><?php echo strtoupper(Kohana::lang('ui_main.clear_map'));?></a></li>
+								<li><a href="javascript:void(0)" class="btn_del_last"><?php echo strtoupper(Kohana::lang('ui_main.delete_last'));?></a></li>
+								<li><a href="javascript:void(0)" class="btn_del_sel"><?php echo strtoupper(Kohana::lang('ui_main.delete_selected'));?></a></li>
+								<li><a href="javascript:void(0)" class="btn_clear"><?php echo strtoupper(Kohana::lang('ui_main.clear_map'));?></a></li>
 							</ul>
 						</div>
 						<div style="clear:both;"></div>

@@ -35,8 +35,8 @@
             		<!-- tab -->
             		<div class="tab">
             			<ul>
-            				<li><a href="#" onclick="apiBannedAction('d','UNBAN', '');"><?php echo strtoupper(Kohana::lang('ui_admin.api_unban')); ?></a></li>
-            				<li><a href="#" onclick="apiBannedAction('x','UNBAN ALL ', '000');"><?php echo strtoupper(Kohana::lang('ui_admin.api_unban_all')); ?></a></li>
+            				<li><a href="javascript:void(0)" onclick="apiBannedAction('d','UNBAN', '');"><?php echo strtoupper(Kohana::lang('ui_admin.api_unban')); ?></a></li>
+            				<li><a href="javascript:void(0)" onclick="apiBannedAction('x','UNBAN ALL ', '000');"><?php echo strtoupper(Kohana::lang('ui_admin.api_unban_all')); ?></a></li>
             			</ul>
             		</div>
             		<!-- /tab -->
@@ -54,7 +54,7 @@
                 <?php if ($form_saved): ?>
             		<!-- green-box -->
             		<div class="green-box" id="submitStatus">
-            			<h3>API <?php echo $form_action; ?> <a href="#" id="hideMessage" class="hide">hide this message</a></h3>
+            			<h3>API <?php echo $form_action; ?> <a href="javascript:void(0)" id="hideMessage" class="hide">hide this message</a></h3>
             		</div>
             	<?php endif; ?>
             	
@@ -102,7 +102,7 @@
             							<td class="col-3"><?php echo $banned_date;?></td>
             							<td class="col-4">
             								<ul>	
-            								 <li><a href="#" class="del" onclick="apiBannedAction('d','UNBAN', '<?php echo $api_ban_id; ?>');">Unban</a></li>
+            								 <li><a href="javascript:void(0)" class="del" onclick="apiBannedAction('d','UNBAN', '<?php echo $api_ban_id; ?>');">Unban</a></li>
             								</ul>
             							</td>
             						</tr>

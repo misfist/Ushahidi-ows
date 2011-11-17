@@ -55,7 +55,7 @@
 				<!-- tabset -->
 				<ul class="tabset">
 					<li>
-						<a href="#" class="active" onclick="show_addedit(true)">
+						<a href="javascript:void(0)" class="active" onclick="show_addedit(true)">
 							<?php echo Kohana::lang('ui_admin.header_add_edit'); ?>
 						</a>
 					</li>
@@ -76,7 +76,7 @@
 					</div>
 					<div class="tab_form_item">
 						<strong>
-							<a href="#" class="tooltip" style="background-position-y:0px" title="<?php echo Kohana::lang("tooltips.settings_access_level"); ?>">
+							<a href="javascript:void(0)" class="tooltip" style="background-position-y:0px" title="<?php echo Kohana::lang("tooltips.settings_access_level"); ?>">
 								<?php echo  Kohana::lang('ui_admin.access_level'); ?>: </a></h4>
 						<?php print form::input('access_level','', ' class="text"'); ?>
 					</div>
@@ -175,7 +175,7 @@
 											
 											} else {?>
 											<ul>
-												<li class="none-separator"><a href="#" 
+												<li class="none-separator"><a href="javascript:void(0)" 
 													onClick="fillFields(
 													'<?php echo(rawurlencode($role_id)); ?>',
 													'<?php echo(rawurlencode($name)); ?>',

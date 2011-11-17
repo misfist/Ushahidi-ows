@@ -32,7 +32,7 @@
 								));
 							$color_css = '';
 						}
-						echo '<li><a href="#" id="cat_'. $category .'"><span '.$color_css.'>'.$category_image.'</span><span class="category-title">'.$category_title.'</span></a>';
+						echo '<li><a href="javascript:void(0)" id="cat_'. $category .'"><span '.$color_css.'>'.$category_image.'</span><span class="category-title">'.$category_title.'</span></a>';
 						// Get Children
 						echo '<div class="hide" id="child_'. $category .'">';
                                                 if( sizeof($category_info[3]) != 0)
@@ -51,7 +51,7 @@
                                                                             ));
                                                                     $color_css = '';
                                                             }
-                                                            echo '<li style="padding-left:20px;"><a href="#" id="cat_'. $child .'"><span '.$color_css.'>'.$child_image.'</span><span class="category-title">'.$child_title.'</span></a></li>';
+                                                            echo '<li style="padding-left:20px;"><a href="javascript:void(0)" id="cat_'. $child .'"><span '.$color_css.'>'.$child_image.'</span><span class="category-title">'.$child_title.'</span></a></li>';
                                                     }
                                                     echo '</ul>';
                                                 }
@@ -80,7 +80,7 @@
 						$layer_link = (!$layer_url) ?
 							url::base().Kohana::config('upload.relative_directory').'/'.$layer_file :
 							$layer_url;
-						echo '<li><a href="#" id="layer_'. $layer .'"
+						echo '<li><a href="javascript:void(0)" id="layer_'. $layer .'"
 						onclick="switchLayer(\''.$layer.'\',\''.$layer_link.'\',\''.$layer_color.'\'); return false;"><div class="swatch" style="background-color:#'.$layer_color.'"></div>
 						<div>'.$layer_name.'</div></a></li>';
 					}
@@ -106,7 +106,7 @@
 					{
 						$sharing_name = $share_info[0];
 						$sharing_color = $share_info[1];
-						echo '<li><a href="#" id="share_'. $share .'"><div class="swatch" style="background-color:#'.$sharing_color.'"></div>
+						echo '<li><a href="javascript:void(0)" id="share_'. $share .'"><div class="swatch" style="background-color:#'.$sharing_color.'"></div>
 						<div>'.$sharing_name.'</div></a></li>';
 					}
 					?>
