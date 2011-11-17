@@ -302,7 +302,8 @@ class Reports_Controller extends Admin_Controller
 			$locations = array();
 		}
 		$this->template->content->locations = $locations;
-		$this->template->content->country_ids = $country_ids;
+		
+		$this->template->content->country_ids = (isset($country_ids)) ? $country_ids : array();
 	
 		// GET countries
 		$countries = array();
