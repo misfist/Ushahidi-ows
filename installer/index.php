@@ -33,7 +33,7 @@
 	<div class="two-col-box tc-right">
 		<h2>Title</h2>
 		<p></p>
-		<p class="last"><a href="#" class="btn">Proceed &rarr;</a></p>
+		<p class="last"><a href="javascript:void(0)" class="btn">Proceed &rarr;</a></p>
 	</div>-->    
 
         	

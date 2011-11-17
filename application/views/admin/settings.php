@@ -55,7 +55,7 @@
 						<div class="l-column">
 							<div class="has_border_first">
 								<div class="row">
-									<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_default_location"); ?>"><?php echo Kohana::lang('settings.default_location');?></a></h4>
+									<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_default_location"); ?>"><?php echo Kohana::lang('settings.default_location');?></a></h4>
 									<p class="bold_desc"><?php echo Kohana::lang('settings.select_default_location');?>.</p>
 									<span class="my-sel-holder">
 										<?php print form::dropdown('default_country',$countries,$form['default_country']); ?>
@@ -83,7 +83,7 @@
 								</div>
 							</div>
 							<div class="has_border">
-								<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_map_provider"); ?>"><?php echo Kohana::lang('settings.map_provider.name');?></a></h4>
+								<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_map_provider"); ?>"><?php echo Kohana::lang('settings.map_provider.name');?></a></h4>
 								<p class="bold_desc"><?php echo Kohana::lang('settings.map_provider.info');?></p>
 								<span class="blue_span"><?php echo Kohana::lang('ui_main.step');?> 1: </span><span class="dark_span"><?php echo Kohana::lang('settings.map_provider.choose');?></span><br />
 								<div class="c_push">
@@ -117,7 +117,7 @@
 								<input type="image" src="<?php echo url::file_loc('img'); ?>media/img/admin/btn-cancel.gif" class="cancel-btn" />
 						</div>
 						<div class="r-column">
-							<h4><a href="#" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_configure_map"); ?>"><?php echo Kohana::lang('settings.configure_map');?></a></h4>
+							<h4><a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang("tooltips.settings_configure_map"); ?>"><?php echo Kohana::lang('settings.configure_map');?></a></h4>
 
 							<div style="width: 279px; float: left; margin-top: 10px;">
 								<span class="bold_span"><?php echo Kohana::lang('settings.default_zoom_level');?></span>

@@ -121,7 +121,7 @@
 					<!-- tabset -->
 					<a name="add"></a>
 					<ul class="tabset">
-						<li><a href="#" class="active"><?php echo Kohana::lang('ui_main.add_edit');?></a></li>
+						<li><a href="javascript:void(0)" class="active"><?php echo Kohana::lang('ui_main.add_edit');?></a></li>
 					</ul>
 					<!-- tab -->
 					<div class="tab">

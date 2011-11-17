@@ -29,8 +29,8 @@
 					<!-- tab -->
 					<div class="tab">
 						<ul>
-							<li><a href="#" onclick="pluginAction('a','ACTIVATE', '');"><?php echo strtoupper(Kohana::lang('ui_main.activate'));?></a></li>
-							<li><a href="#" onclick="pluginAction('i','DEACTIVATE', '');"><?php echo strtoupper(Kohana::lang('ui_main.deactivate'));?></a></li>
+							<li><a href="javascript:void(0)" onclick="pluginAction('a','ACTIVATE', '');"><?php echo strtoupper(Kohana::lang('ui_main.activate'));?></a></li>
+							<li><a href="javascript:void(0)" onclick="pluginAction('i','DEACTIVATE', '');"><?php echo strtoupper(Kohana::lang('ui_main.deactivate'));?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 				?>
 					<!-- green-box -->
 					<div class="green-box" id="submitStatus">
-						<h3><?php echo Kohana::lang('ui_admin.plugins'); ?> <?php echo $form_action; ?> <a href="#" id="hideMessage" class="hide"><?php echo Kohana::lang('ui_main.hide_this_message');?></a></h3>
+						<h3><?php echo Kohana::lang('ui_admin.plugins'); ?> <?php echo $form_action; ?> <a href="javascript:void(0)" id="hideMessage" class="hide"><?php echo Kohana::lang('ui_main.hide_this_message');?></a></h3>
 					</div>
 				<?php
 				}
@@ -128,11 +128,11 @@
 												<li class="none-separator"><?php
 												if ($plugin_active)
 												{
-													?><a href="#" class="status_no" onclick="pluginAction('i','DEACTIVATE', '<?php echo $plugin_id; ?>');"><?php echo Kohana::lang('ui_main.deactivate');?></a><?php
+													?><a href="javascript:void(0)" class="status_no" onclick="pluginAction('i','DEACTIVATE', '<?php echo $plugin_id; ?>');"><?php echo Kohana::lang('ui_main.deactivate');?></a><?php
 												}
 												else
 												{
-													?><a href="#" class="status_yes" onclick="pluginAction('a','ACTIVATE', '<?php echo $plugin_id; ?>');"><?php echo Kohana::lang('ui_main.activate');?></a><?php
+													?><a href="javascript:void(0)" class="status_yes" onclick="pluginAction('a','ACTIVATE', '<?php echo $plugin_id; ?>');"><?php echo Kohana::lang('ui_main.activate');?></a><?php
 												}
 												?></li>
 											</ul>

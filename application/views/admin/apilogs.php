@@ -31,8 +31,8 @@
             		<!-- tab -->
             		<div class="tab">
             			<ul>
-            				<li><a href="#" onclick="apiLogAction('d','DELETE', '');"><?php echo strtoupper(Kohana::lang('ui_admin.delete_action')) ;?></a></li>
-            				<li><a href="#" onclick="apiLogAction('x','DELETE ALL ', '000');"><?php echo strtoupper(Kohana::lang('ui_admin.delete_all')) ;?></a></li>
+            				<li><a href="javascript:void(0)" onclick="apiLogAction('d','DELETE', '');"><?php echo strtoupper(Kohana::lang('ui_admin.delete_action')) ;?></a></li>
+            				<li><a href="javascript:void(0)" onclick="apiLogAction('x','DELETE ALL ', '000');"><?php echo strtoupper(Kohana::lang('ui_admin.delete_all')) ;?></a></li>
             			</ul>
             		</div>
             	</div>
@@ -50,7 +50,7 @@
             		<!-- green-box -->
             		<div class="green-box" id="submitStatus">
             			<h3><?php echo Kohana::lang('ui_admin.api_logs');?> <?php echo $form_action; ?> 
-            			    <a href="#" id="hideMessage" class="hide"><?php echo Kohana::lang('ui_main.hide_this_message');?></a>
+            			    <a href="javascript:void(0)" id="hideMessage" class="hide"><?php echo Kohana::lang('ui_main.hide_this_message');?></a>
             			</h3>
             		</div>
             	<?php endif; ?>
@@ -118,7 +118,7 @@
             								<ul>
             								    <li>
             								        <?php if ( ! isset($api_log->ban_id)): ?>
-            								        <a href="#" class="del" onclick="apiLogAction('b', 'BAN', '<?php echo $api_log_id; ?>');">
+            								        <a href="javascript:void(0)" class="del" onclick="apiLogAction('b', 'BAN', '<?php echo $api_log_id; ?>');">
             								            <?php echo strtoupper(Kohana::lang('ui_admin.banip_action')); ?>
             								        </a>
             								        <?php else: ?>
@@ -126,7 +126,7 @@
             								        <?php endif; ?>
             								    </li>
             								    <li>
-            								        <a href="#" class="del" onclick="apiLogAction('d','DELETE', '<?php echo $api_log_id; ?>');">
+            								        <a href="javascript:void(0)" class="del" onclick="apiLogAction('d','DELETE', '<?php echo $api_log_id; ?>');">
             								            <?php echo strtoupper(Kohana::lang('ui_admin.delete_action')) ;?>
             								        </a>
             								    </li>

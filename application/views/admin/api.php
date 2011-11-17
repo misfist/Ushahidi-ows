@@ -30,8 +30,8 @@
                     <!-- tab -->
                     <div class="tab">
                         <ul>
-                            <li><a href="#" onclick="apiSettingsAction('s', 'SAVE');"><?php echo strtoupper(Kohana::lang('ui_admin.save_settings')); ?></a></li>
-                            <li><a href="#" onclick-"apiSettingsAction('c', 'CANCEL');"><?php echo strtoupper(Kohana::lang('ui_admin.cancel')); ?></a></li>
+                            <li><a href="javascript:void(0)" onclick="apiSettingsAction('s', 'SAVE');"><?php echo strtoupper(Kohana::lang('ui_admin.save_settings')); ?></a></li>
+                            <li><a href="javascript:void(0)" onclick-"apiSettingsAction('c', 'CANCEL');"><?php echo strtoupper(Kohana::lang('ui_admin.cancel')); ?></a></li>
                         </ul>
                     </div>
                     <!-- /tab -->
@@ -68,7 +68,7 @@
                     <div class="sms_holder">
                         <div class="row">
                             <h4>
-                                <a href="#" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_default_record_limit'); ?>">
+                                <a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_default_record_limit'); ?>">
                                     <?php echo Kohana::lang('settings.api.default_record_limit'); ?>
                                 </a>
                             </h4>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="row">
                             <h4>
-                                <a href="#" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_max_record_limit'); ?>">
+                                <a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_max_record_limit'); ?>">
                                     <?php echo Kohana::lang('settings.api.maximum_record_limit'); ?>
                                 </a>
                             </h4>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="row">
                             <h4>
-                                <a href="#" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_max_requests_per_ip'); ?>">
+                                <a href="javascript:void(0)" class="tooltip" title="<?php echo Kohana::lang('tooltips.settings_api_max_requests_per_ip'); ?>">
                                     <?php echo Kohana::lang('settings.api.maximum_requests_per_ip_address'); ?>
                                 </a>
                             </h4>

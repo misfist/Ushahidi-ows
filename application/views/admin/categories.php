@@ -51,7 +51,7 @@
 					<!-- tabset -->
 					<a name="add"></a>
 					<ul class="tabset">
-						<li><a href="#" class="active" onclick="show_addedit(true)"><?php echo Kohana::lang('ui_main.add_edit');?></a></li>
+						<li><a href="javascript:void(0)" class="active" onclick="show_addedit(true)"><?php echo Kohana::lang('ui_main.add_edit');?></a></li>
 					</ul>
 					<!-- tab -->
 					<div class="tab" id="addedit" style="display:none">
@@ -62,7 +62,7 @@
 						<div class="tab_form_item">
 							<strong><?php echo Kohana::lang('ui_main.category_name');?>:</strong><br />
 							<?php print form::input('category_title', $form['category_title'], ' class="text"'); ?><br/>
-							<a href="#" id="category_translations" class="new-cat" style="clear:both;">Category Translations</a>
+							<a href="javascript:void(0)" id="category_translations" class="new-cat" style="clear:both;">Category Translations</a>
 							<div id="category_translations_form_fields" style="display:none;">
 								<div style="clear:both;"></div>
 								<?php
@@ -224,7 +224,7 @@
 												
 												<?php if($category_trusted == 1) { ?>
 												<div class="right">
-													<a href="#" class="tooltip" title="<?php echo htmlentities(Kohana::lang('ui_admin.special_category_explanation'),ENT_QUOTES);?>"><strong><?php echo Kohana::lang('ui_admin.special_category');?></strong></a>
+													<a href="javascript:void(0)" class="tooltip" title="<?php echo htmlentities(Kohana::lang('ui_admin.special_category_explanation'),ENT_QUOTES);?>"><strong><?php echo Kohana::lang('ui_admin.special_category');?></strong></a>
 												</div>
 												<?php } ?>
 												

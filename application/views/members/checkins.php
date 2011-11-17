@@ -22,12 +22,12 @@
 				<div class="tabs">
 					<!-- tabset -->
 					<ul class="tabset">
-						<li><a href="#" class="active"><?php echo Kohana::lang('ui_main.show_all');?></a></li>
+						<li><a href="javascript:void(0)" class="active"><?php echo Kohana::lang('ui_main.show_all');?></a></li>
 					</ul>
 					<!-- tab -->
 					<div class="tab">
 						<ul>
-							<li><a href="#" onClick="checkinAction('d', 'DELETE', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
+							<li><a href="javascript:void(0)" onClick="checkinAction('d', 'DELETE', '')"><?php echo strtoupper(Kohana::lang('ui_main.delete'));?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 				?>
 					<!-- green-box -->
 					<div class="green-box" id="submitStatus">
-						<h3><?php echo Kohana::lang('ui_admin.checkins');?> <?php echo $form_action; ?> <a href="#" id="hideMessage" class="hide">hide this message</a></h3>
+						<h3><?php echo Kohana::lang('ui_admin.checkins');?> <?php echo $form_action; ?> <a href="javascript:void(0)" id="hideMessage" class="hide">hide this message</a></h3>
 					</div>
 				<?php
 				}

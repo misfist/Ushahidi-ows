@@ -27,8 +27,8 @@
 					<td class="last">
 						<ul class="link-toggle lt-icons-only">
 							<?php //@todo Toggle the status of these links depending on the current page ?>
-							<li><a href="#" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
-							<li><a href="#" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
+							<li><a href="javascript:void(0)" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
+							<li><a href="javascript:void(0)" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
 						</ul>
 					</td>
 				</tr>
@@ -37,7 +37,7 @@
 		<!-- /Top reportbox section-->
 		
 		<!-- Report listing -->
-		<div class="r_cat_tooltip"><a href="#" class="r-3"></a></div>
+		<div class="r_cat_tooltip"><a href="javascript:void(0)" class="r-3"></a></div>
 		<div class="rb_list-and-map-box">
 			<div id="rb_list-view">
 			<?php
@@ -93,7 +93,7 @@
 						</p>
 
 						<!-- Only show this if the report has a video -->
-						<p class="r_video" style="display:none;"><a href="#">Video</a></p>
+						<p class="r_video" style="display:none;"><a href="javascript:void(0)">Video</a></p>
 
 						<!-- Category Selector -->
 						<div class="r_categories">
@@ -157,8 +157,8 @@
 					<td class="last">
 						<ul class="link-toggle lt-icons-only">
 							<?php //@todo Toggle the status of these links depending on the current page ?>
-							<li><a href="#" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
-							<li><a href="#" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
+							<li><a href="javascript:void(0)" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
+							<li><a href="javascript:void(0)" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
 						</ul>
 					</td>
 				</tr>

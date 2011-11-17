@@ -674,7 +674,7 @@ Date.fullYearStart = '20';
 					
 					if (!alreadyExists && s.createButton) {
 						// create it!
-						controller.button = $('<a href="#" class="dp-choose-date" title="' + $.dpText.TEXT_CHOOSE_DATE + '">' + $.dpText.TEXT_CHOOSE_DATE + '</a>')
+						controller.button = $('<a href="javascript:void(0)" class="dp-choose-date" title="' + $.dpText.TEXT_CHOOSE_DATE + '">' + $.dpText.TEXT_CHOOSE_DATE + '</a>')
 								.bind(
 									'click',
 									function()
@@ -1285,7 +1285,7 @@ Date.fullYearStart = '20';
 							.attr(attrs)
 							.css(cssRules)
 							.append(
-//								$('<a href="#" class="selecteee">aaa</a>'),
+//								$('<a href="javascript:void(0)" class="selecteee">aaa</a>'),
 								$('<h2></h2>'),
 								$('<div class="dp-nav-prev"></div>')
 									.append(
@@ -1337,7 +1337,7 @@ Date.fullYearStart = '20';
 				}
 				if (this.displayClose) {
 					$pop.append(
-						$('<a href="#" id="dp-close">' + $.dpText.TEXT_CLOSE + '</a>')
+						$('<a href="javascript:void(0)" id="dp-close">' + $.dpText.TEXT_CLOSE + '</a>')
 							.bind(
 								'click',
 								function()
