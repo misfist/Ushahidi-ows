@@ -1576,7 +1576,11 @@ ul.pager li a.active {background:#f2f7fa;}
 
 .feedback_title {
     padding : 20px 0 0 10px;
+    float: right;
+    font-size: 80%;
+    padding: 0 20px 0 10px;
 }
+.feedback_title a { color: #efefef; }
 
 .or_txt {
     padding : 0 10px 0 10px;
