@@ -142,7 +142,7 @@
 						if ($twitter_hashtag != end($twitter_hashtag_array)) {
 							echo " or ";
 						}
-						} ?></li><?php
+						} ?>  Tweets need to be verified - please include location info like "Broadway/Pine, NYC"</li>  <?php
 						} ?><li><a href="<?php echo url::site() . 'reports/submit/'; ?>"><?php echo Kohana::lang('ui_main.report_option_4'); ?></a></li>
 					</ol>
 
