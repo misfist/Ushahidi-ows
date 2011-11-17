@@ -378,8 +378,12 @@ class reports_Core {
 					$strokewidth = (isset($item->strokewidth) AND (float) $item->strokewidth) ? (float) $item->strokewidth : "2.5";
 					if ($geometry)
 					{
+					  
+					  $sql = "INSERT INTO ".Kohana::config('database.default.table_prefix')."geometry "
+            ."(incident_id, geometry, geometry_label, geometry_comment, geometry_color, geometry_strokewidth) "
+            ."VALUES(".$incident->id.", GeomFromText('".$geometry."'), '".$label."', '".$comment."', '".$color."', ".$strokewidth.")";
 						// 	Format the SQL string
-						$sql = sprintf($sql, $incident->id, $geometry, $label, $comment, $color, $strokewidth);
+//						$sql = sprintf($sql, $incident->id, $geometry, $label, $comment, $color, $strokewidth);
 						
 						// Execute the query
 						$db->query($sql);
