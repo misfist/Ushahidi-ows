@@ -84,7 +84,7 @@ class Login_Controller extends Template_Controller {
 			$post->pre_filter('trim');
 			$post->add_rules('username', 'required');
 			$post->add_rules('password', 'required');
-			
+    		
 			if ($post->validate())
 			{
 				// Sanitize $_POST data removing all inputs without rules
@@ -92,6 +92,7 @@ class Login_Controller extends Template_Controller {
 
 				// Load the user
 				$user = ORM::factory('user', $postdata_array['username']);
+
 
 				// If no user with that username found
 				if ( ! $user->id)
@@ -105,6 +106,12 @@ class Login_Controller extends Template_Controller {
 					// Attempt a login
 					if ($auth->login($user, $postdata_array['password'], $remember))
 					{
+
+                            //bounce to homepage - otherwise you'd get bounced to login
+                            //and it appeared your login wasn't working
+                            url::redirect("/");
+                    		exit();
+
 						// Exists Redirect to Dashboard
 						url::redirect("members/dashboard");
 					}
@@ -363,7 +370,7 @@ class Login_Controller extends Template_Controller {
 			->where("email", $email)
 			->where("confirmed != 1")
 			->find();
-			
+		
 		if ($user->loaded)
 		{
 			$user->confirmed = 1;
@@ -381,7 +388,9 @@ class Login_Controller extends Template_Controller {
 		else
 		{
 			// Redirect to Dashboard
-			url::redirect("members/login");
+			url::redirect("members/dashboard");
+			
+			//url::redirect("members/login");
 		}
 	}
 	
