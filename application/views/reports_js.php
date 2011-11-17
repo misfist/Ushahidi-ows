@@ -42,8 +42,11 @@
 	}
 	
 	$(document).ready(function() {
-		  
+		    $('#report_date_from').datetimepicker();
+		    $('#report_date_to').datetimepicker();
+      
 		// "Choose Date Range"" Datepicker
+		/*
 		var dates = $( "#report_date_from, #report_date_to" ).datepicker({
 			defaultDate: "+1w",
 			changeMonth: true,
@@ -58,6 +61,7 @@
 				dates.not( this ).datepicker( "option", option, date );
 			}
 		});
+		*/
 		  
 		/**
 		 * Date range datepicker box functionality

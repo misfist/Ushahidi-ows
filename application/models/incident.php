@@ -367,7 +367,6 @@ class Incident_Model extends ORM {
 			. 'INNER JOIN '.$table_prefix.'category c ON (ic.category_id = c.id) '
 			. 'WHERE i.incident_active = 1 ';
 			// . 'AND c.category_visible = 1 ';
-
 		// Check for the additional conditions for the query
 		if ( ! empty($where) AND count($where) > 0)
 		{

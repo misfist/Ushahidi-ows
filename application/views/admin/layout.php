@@ -59,6 +59,7 @@
 		
 		<?php
 		echo html::script(url::file_loc('js').'media/js/jquery.datePicker', true);
+
 		echo '<!--[if IE]>'.
 			html::script(url::file_loc('js').'media/js/jquery.bgiframe.min', true)
 			.'<![endif]-->';

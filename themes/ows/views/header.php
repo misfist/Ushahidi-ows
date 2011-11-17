@@ -7,7 +7,10 @@
 	<?php
 	// Action::header_scripts - Additional Inline Scripts from Plugins
 	Event::run('ushahidi_action.header_scripts');
+	
 	?>
+  	<script type="text/javascript" src="<?php echo url::site(); ?>themes/ows/js/jquery.timepicker.js"></script>
+
 </head>
 
 <body id="page">
